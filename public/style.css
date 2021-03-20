@@ -1,0 +1,113 @@
+
+
+body{
+   margin: 0;
+   padding: 0;
+}
+#video-grid {
+    display: flex;
+    justify-content: center;
+    padding-top:50px ;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+video {
+    width: auto;
+    height: 200px;
+    margin: 10px;
+}
+.main {
+    display: flex;
+    height: 100vh;
+}
+.left__session {
+    flex:0.8;
+}
+.right__session {
+    flex:0.2;
+}
+.left__session {
+    display: flex;
+    flex-direction: column;
+}
+.main__video {
+    flex-grow: 1;
+    position: relative;
+    align-items: center !important;
+    background-color: black;
+
+}
+
+
+.video__controls {
+    display: flex;
+    background-color: #1c1e20;
+    color: grey;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.video__controls__buttons {
+    display: flex;
+}
+.button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.unmute .mute {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+
+}
+.right__session {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1E20;
+}
+.input__message__container {
+    display: flex;
+}
+
+.input__message {
+
+    flex: 1;
+    outline: none;
+    margin: 5px;
+    background-color: transparent;
+    color:chocolate;
+    z-index: 22;
+    border: none;
+}
+
+.button__message {
+    flex: 0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.main__chat {
+   flex-grow: 1;
+   overflow-y: scroll;
+
+}
+ul {
+    list-style-type: none;
+
+}
+.message {
+
+    color: black;
+    background-color:grey;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.unmute {
+    color: red;
+}
